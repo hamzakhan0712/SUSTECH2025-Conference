@@ -1,238 +1,115 @@
-# 🌱 Sustainable Technology Conference 2025
+# SUSTECH 2025 — Conference Website
 
-<div align="center">
+Single-page website for **SUSTECH 2025**, the International Conference on Sustainable Technologies
+held online on 8 April 2025, organised by Saraswati College of Engineering (SCOE), Kharghar,
+Navi Mumbai.
 
-![Conference Banner](https://img.shields.io/badge/Conference-2025-green?style=for-the-badge)
-![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-6.1.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-4.0.7-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+It is a static React site: one scrolling page with sections for the conference overview, the
+college, the four paper tracks, key dates, the call for papers, registration fees, and the
+organising committees. There is no backend — submissions are handled externally through
+Microsoft CMT, and the site only links out to it.
 
-**A platform for researchers, academicians, and industry professionals to explore innovations in Green Tech, AI for Sustainability, and Sustainable Mobility.**
+## Screenshots
 
-[Live Demo](#) • [Documentation](#) • [Report Bug](#) • [Request Feature](#)
+|  |  |
+|:--|:--|
+| ![Landing section with the conference title, event carousel and organiser details](docs/screenshots/01-hero.jpg)<br>**Landing / conference intro** | ![Four conference tracks shown as tabs with a scrollable topic list](docs/screenshots/02-tracks.jpg)<br>**Conference tracks (tabbed)** |
+| ![Horizontal timeline with three milestone cards for submission, acceptance and registration deadlines](docs/screenshots/03-timeline.jpg)<br>**Important dates** | ![Registration fee table split by Indian and foreign delegates](docs/screenshots/04-registration.jpg)<br>**Registration fees** |
 
-</div>
+## Running it
 
----
-
-## 📖 About The Project
-
-The Sustainable Technology Conference 2025 website is a comprehensive digital platform designed to bring together brilliant minds from academia, research institutions, and industry to discuss and showcase cutting-edge innovations in sustainable technology. Our mission is to facilitate knowledge exchange, foster collaboration, and accelerate the adoption of green technologies worldwide.
-
-### 🎯 Conference Focus Areas
-
-- **🌿 Green Technology** - Renewable energy, sustainable materials, and eco-friendly innovations
-- **🤖 AI for Sustainability** - Machine learning applications for environmental protection and resource optimization
-- **🚗 Sustainable Mobility** - Electric vehicles, smart transportation systems, and green logistics
-
----
-
-## ✨ Features
-
-### 🎨 User Experience
-- **Responsive Design** - Seamless experience across desktop, tablet, and mobile devices
-- **Modern UI/UX** - Clean, professional interface built with React and Radix UI components
-- **Smooth Animations** - Enhanced user interactions using Framer Motion
-- **Fast Performance** - Lightning-fast load times powered by Vite
-
-### 📋 Conference Management
-- **Event Information** - Comprehensive details about conference schedule, venues, and activities
-- **Speaker Profiles** - Showcase distinguished speakers and their expertise
-- **Registration System** - Easy-to-use registration interface for attendees
-- **Session Management** - Organized tracks and parallel sessions information
-- **Call for Papers** - Submission guidelines and deadlines for research papers
-
-### 🔧 Technical Features
-- Component-based architecture for maintainability
-- Route-based navigation with React Router
-- Smooth scrolling and section navigation
-- Interactive carousels and slideshows (Swiper)
-- Accessible UI components (Radix UI)
-- Optimized assets and lazy loading
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-- **Node.js** (v18.0.0 or higher)
-- **npm** (v9.0.0 or higher) or **yarn**
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/hamzakhan0712/sustainable-tech-conference-2025.git
-   cd sustainable-tech-conference-2025
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   
-   Navigate to `http://localhost:5173` to view the application
-
-### 📦 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Starts the development server with hot-reload |
-| `npm run build` | Builds the app for production to the `dist` folder |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run ESLint to check code quality |
-
----
-
-## 🛠️ Built With
-
-### Core Technologies
-- **[React](https://react.dev/)** (v19.0.0) - JavaScript library for building user interfaces
-- **[Vite](https://vitejs.dev/)** (v6.1.0) - Next-generation frontend build tool
-- **[React Router DOM](https://reactrouter.com/)** (v7.2.0) - Declarative routing for React
-
-### Styling & UI
-- **[Tailwind CSS](https://tailwindcss.com/)** (v4.0.7) - Utility-first CSS framework
-- **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible UI components
-  - Dialog, Menubar, Navigation Menu, Scroll Area, Separator, Tabs, Tooltip
-- **[Framer Motion](https://www.framer.com/motion/)** (v12.4.4) - Animation library
-- **[Lucide React](https://lucide.dev/)** - Beautiful & consistent icon toolkit
-- **[Swiper](https://swiperjs.com/)** (v11.2.4) - Modern mobile touch slider
-
-### Development Tools
-- **[ESLint](https://eslint.org/)** - Code linting and quality assurance
-- **[PostCSS](https://postcss.org/)** - CSS transformation
-- **[Autoprefixer](https://github.com/postcss/autoprefixer)** - CSS vendor prefixing
-
----
-
-## 📁 Project Structure
-
-```
-sustainable-tech-conference-2025/
-├── public/                 # Static assets
-├── src/
-│   ├── components/        # Reusable React components
-│   ├── pages/            # Page components
-│   ├── assets/           # Images, fonts, and other assets
-│   ├── styles/           # Global styles and Tailwind config
-│   ├── lib/              # Utility functions and helpers
-│   ├── App.jsx           # Main application component
-│   └── main.jsx          # Application entry point
-├── index.html            # HTML template
-├── package.json          # Project dependencies and scripts
-├── vite.config.js        # Vite configuration
-├── tailwind.config.js    # Tailwind CSS configuration
-├── eslint.config.js      # ESLint configuration
-└── README.md             # Project documentation
-```
-
----
-
-## 🎨 Design System
-
-The project utilizes a consistent design system with:
-- **Color Palette** - Eco-friendly green theme with accessible contrast ratios
-- **Typography** - Clear hierarchy with responsive font sizes
-- **Spacing** - Consistent spacing scale using Tailwind utilities
-- **Components** - Reusable, composable UI components
-- **Animations** - Subtle, purposeful animations for better UX
-
----
-
-## 🌐 Deployment
-
-### Build for Production
+Requires Node 18+ (developed on Node 24).
 
 ```bash
-npm run build
+npm install
+npm run dev      # http://localhost:5173
 ```
 
-The optimized production build will be created in the `dist/` directory.
+| Script | What it does |
+|---|---|
+| `npm run dev` | Vite dev server with HMR |
+| `npm run build` | Production build into `dist/` |
+| `npm run preview` | Serve the built `dist/` locally |
+| `npm run lint` | ESLint over the repo (currently reports errors — see Notes) |
 
-### Deployment Options
+`npm run build` produces roughly 3.8 MB of output, most of it images. The JS bundle is a single
+~597 kB chunk (~192 kB gzipped) and Vite warns about the chunk size.
 
-This project can be deployed to various platforms:
+## How the content is organised
 
-- **[Vercel](https://vercel.com/)** - Zero-config deployment for Vite apps
-- **[Netlify](https://www.netlify.com/)** - Continuous deployment from Git
-- **[GitHub Pages](https://pages.github.com/)** - Free hosting for static sites
-- **[AWS S3](https://aws.amazon.com/s3/)** - Scalable cloud hosting
-- **[Firebase Hosting](https://firebase.google.com/products/hosting)** - Fast and secure hosting
+Almost all copy — titles, track topics, dates, fees, committee names, contact numbers — lives in
+one file: **`src/assets/values.jsx`**. It exports plain objects (`conferenceData`, `scoeContent`,
+`conferenceTracks`, `timelineData`, `callForPapersData`, `registrationData`, `patronsData`,
+`committeeData`, `advisoryCommittees`, `menuItems`, `appData`) which `src/pages/Home.jsx` maps over
+to render each section.
 
----
+So for the common case — updating a deadline, adding a topic to a track, changing a fee, adding a
+committee member — you edit `values.jsx` and nothing else. Layout changes go in `Home.jsx`.
 
-## 🤝 Contributing
+## Structure
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+```
+src/
+├── assets/
+│   ├── values.jsx        all page content + image imports
+│   └── images/           logos, banners, campus photos, portraits (~3.2 MB)
+├── components/
+│   ├── Navbar.jsx        desktop nav; turns solid white after 50px of scroll
+│   ├── Footer.jsx        links + organiser contact numbers
+│   └── ui/               shadcn/ui components (button, card, tabs, sheet, …)
+├── pages/Home.jsx        every section of the page, in order
+├── lib/utils.js          the `cn()` class-merge helper
+├── App.jsx               header logos, mobile drawer, router, layout shell
+└── main.jsx              entry point
+```
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Navigation is smooth-scroll (`react-scroll`) between sections on a single page, not real routing.
+React Router is present but only registers `/` → `Home`.
 
-### 📝 Contribution Guidelines
+## Built with
 
-- Follow the existing code style and conventions
-- Write clear, concise commit messages
-- Add comments for complex logic
-- Test your changes thoroughly
-- Update documentation as needed
+React 19, Vite 6, Tailwind CSS 4 (via `@tailwindcss/vite`), Radix UI primitives wrapped as
+shadcn/ui components, Framer Motion for the float and fade animations, Swiper for the banner
+carousel, and Lucide for icons.
 
----
+## Deploying
 
-## 📄 License
+`npm run build`, then serve `dist/` from any static host. If you host it under a subpath rather
+than at the domain root, uncomment and adjust `base` in `vite.config.js` (there is already a
+commented-out `base: '/sustech2025/'`).
 
-This project is licensed under the **ISC License** - see the `LICENSE` file for details.
+## Notes and known rough edges
 
----
+These are real issues in the current code, listed so nobody re-discovers them the hard way:
 
-## 📧 Contact
+- **`tailwind.config.js` is not actually used.** Tailwind 4 with the Vite plugin is configured
+  from CSS, and `src/index.css` has no `@config` directive, so the theme, keyframes and animations
+  defined in that file are inert. The file also contains code that would throw if it were loaded
+  (it calls `React.useEffect` outside a component and references an undefined
+  `flattenColorPalette`).
+- **`index.html` links `output.css`**, which does not exist in the repo. It is a harmless 404 —
+  styles come from `src/index.css` through Vite.
+- **Two mobile menu links do nothing.** In `appData.menu.conferenceDetails` the ids are `tracks`
+  and `call-for-papers`, but the actual sections are `conference-tracks` and `call-for-paper`. The
+  desktop nav uses the correct ids and works.
+- **"Playfair Display" is never loaded.** It is applied via `className` throughout but there is no
+  `@font-face` or font link, so it falls back to a system serif unless the visitor happens to have
+  it installed. The same applies to the `font-blackletter` class used in the call-for-papers
+  section.
+- **`npm run lint` currently fails** with 77 problems (73 errors, 4 warnings). The bulk are
+  `react/prop-types` errors on the generated shadcn/ui components; the rest are the
+  `tailwind.config.js` problems above, `no-undef` on `__dirname` in `vite.config.js`, and an unused
+  import in `Home.jsx`.
+- **Console warning about nested anchors** on the desktop nav: `react-scroll`'s `Link` renders an
+  `<a>` and wraps Radix's `NavigationMenuLink`, which renders another.
+- `vite.config.js` contains a top-level `theme` key with font settings. Vite ignores unknown keys,
+  so it has no effect — it is Tailwind-shaped config in the wrong file.
+- All dates, fees and deadlines in `values.jsx` are from the April 2025 event and are now past.
 
-**Project Maintainer:** Hamza Khan
+## Credits
 
-- GitHub: [@hamzakhan0712](https://github.com/hamzakhan0712)
-- Project Link: [https://github.com/hamzakhan0712/sustainable-tech-conference-2025](https://github.com/hamzakhan0712/sustainable-tech-conference-2025)
+Site content and imagery belong to Saraswati College of Engineering
+([sce.edu.in](https://www.sce.edu.in/)). Peer review for the conference was managed through
+Microsoft CMT.
 
----
-
-## 🙏 Acknowledgments
-
-- Conference organizing committee
-- All speakers and participants
-- Open-source community for amazing tools and libraries
-- Contributors who help improve this platform
-
----
-
-## 🔮 Future Enhancements
-
-- [ ] Multi-language support (i18n)
-- [ ] Real-time chat for attendees
-- [ ] Virtual conference room integration
-- [ ] Mobile app version
-- [ ] AI-powered recommendation system
-- [ ] Interactive venue maps
-- [ ] Networking features
-- [ ] Post-conference content archive
-
----
-
-<div align="center">
-
-**Made with 💚 for a Sustainable Future**
-
-[![Sustainability](https://img.shields.io/badge/Focus-Sustainability-success?style=for-the-badge)](https://github.com/hamzakhan0712/sustainable-tech-conference-2025)
-[![Innovation](https://img.shields.io/badge/Driven%20by-Innovation-blue?style=for-the-badge)](https://github.com/hamzakhan0712/sustainable-tech-conference-2025)
-
-</div>
+`package.json` declares the ISC license, but no `LICENSE` file is checked in.
